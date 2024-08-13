@@ -30,18 +30,18 @@ The concept of Transfer learning is used to overcome the issues of the small siz
 
 ## Dataset Link  
 Dataset can be downloaded from below links:  
-https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset  
-https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small  
+https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset    
+https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small    
 
 ## Installation
-Use pip to install the requirements.
+Use pip to install the requirements.  
 
-pip install -r requirements.txt
+pip install -r requirements.txt    
 
 ## Usage
 To run the web server, simply execute streamlit with the main recommender app:
 
-streamlit run main.py
+streamlit run main.py    
 
 ## Built With
 OpenCV - Open Source Computer Vision and Machine Learning software library.  
