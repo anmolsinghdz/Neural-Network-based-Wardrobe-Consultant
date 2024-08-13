@@ -30,8 +30,8 @@ The concept of Transfer learning is used to overcome the issues of the small siz
 
 ## Dataset Link  
 Dataset can be downloaded from below links:  
-https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset    
-https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small    
+# https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset      
+# https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small       
 
 ## Installation
 Use pip to install the requirements.  
