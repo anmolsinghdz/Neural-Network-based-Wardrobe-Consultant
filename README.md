@@ -11,3 +11,47 @@ In the online internet era, the idea of Recommendation technology was initially 
 In this project, we propose a model that uses Convolutional Neural Network and the Nearest neighbour backed recommender. As shown in the figure Initially, the neural networks are trained and then an inventory is selected for generating recommendations and a database is created for the items in inventory. The nearest neighbour’s algorithm is used to find the most relevant products based on the input image and recommendations are generated.
 
 ![image](https://github.com/user-attachments/assets/d88239c7-d04d-452d-bdea-9b3120d95907)
+
+## Training the neural networks
+Once the data is pre-processed, the neural networks are trained, utilizing transfer learning from ResNet50. More additional layers are added in the last layers that replace the architecture and weights from ResNet50 in order to fine-tune the network model to serve the current issue. The figure shows the ResNet50 architecture.
+
+![image](https://github.com/user-attachments/assets/bd156524-ca45-4062-be9d-208a5cf4d202)
+
+## Getting the inventory
+The images from Kaggle Fashion Product Images Dataset. The inventory is then run through the neural networks to classify and generate embeddings and the output is then used to generate recommendations. The Figure shows a sample set of inventory data.
+
+![image](https://github.com/user-attachments/assets/5b48e24b-75d0-4ddf-a19c-2524673d9014)
+
+## Recommendation generation
+To generate recommendations, our proposed approach uses Sklearn Nearest neighbours Oh Yeah. This allows us to find the nearest neighbours for the given input image. The similarity measure used in this Project is the Cosine Similarity measure. The top 5 recommendations are extracted from the database and their images are displayed.
+
+## Experiment and results
+The concept of Transfer learning is used to overcome the issues of the small size Fashion dataset. Therefore we pre-train the classification models on the DeepFashion dataset that consists of 44,441 garment images. The networks are trained and validated on the dataset taken. The training results show a great accuracy of the model with low error, loss and good f-score.
+
+## Dataset Link  
+Dataset can be downloaded from below links:  
+https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset  
+https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small  
+
+## Installation
+Use pip to install the requirements.
+
+pip install -r requirements.txt
+
+## Usage
+To run the web server, simply execute streamlit with the main recommender app:
+
+streamlit run main.py
+
+## Built With
+OpenCV - Open Source Computer Vision and Machine Learning software library.  
+Tensorflow - TensorFlow is an end-to-end open source platform for machine learning.  
+Tqdm - tqdm is a Python library that allows you to output a smart progress bar by wrapping around any iterable.  
+streamlit - Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful data apps in hours, not weeks.  
+pandas - pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.  
+Pillow - PIL is the Python Imaging Library by Fredrik Lundh and Contributors.  
+scikit-learn - Scikit-learn is a free software machine learning library for the Python programming language.  
+opencv-python - OpenCV is a huge open-source library for computer vision, machine learning, and image processing.  
+
+## Conclusion
+In this project, we have presented a novel framework for fashion recommendation that is driven by data, visually related and simple effective recommendation systems for generating fashion product images. The proposed approach uses a two-stage phase. Initially, our proposed approach extracts the features of the image using CNN classifier ie., for instance allowing the customers to upload any random fashion image from any E-commerce website and later generating similar images to the uploaded image based on the features and texture of the input image. It is imperative that such research goes forward to facilitate greater recommendation accuracy and improve the overall experience of fashion exploration for direct and indirect consumers alike.
