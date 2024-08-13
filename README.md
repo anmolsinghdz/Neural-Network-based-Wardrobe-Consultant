@@ -36,12 +36,12 @@ https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small
 ## Installation
 Use pip to install the requirements.  
 
-pip install -r requirements.txt    
+''' pip install -r requirements.txt '''  
 
 ## Usage
 To run the web server, simply execute streamlit with the main recommender app:
 
-streamlit run main.py    
+''' streamlit run main.py '''  
 
 ## Built With
 OpenCV - Open Source Computer Vision and Machine Learning software library.  
